@@ -11,3 +11,15 @@ def not_quite(winning_num, ticket_num)
 	winning_num.length - matches == 1
 
 end
+
+def new_function(my_num, win_nums)
+	array = []
+
+	win_nums.each do |win_num|
+		if not_quite(win_num, my_num)
+				array << win_num
+		end
+	end
+	array
+
+end
